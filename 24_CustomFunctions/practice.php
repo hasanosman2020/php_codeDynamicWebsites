@@ -4,7 +4,7 @@
 	define("TITLE", "Custom Functions");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
+	$myName	= "Hasan Osman";
 	$lessonNum	= 24;
 
 ?>
@@ -29,9 +29,16 @@
 			<div class="sandbox">
 				
 				<?php
-					
-					// your code here
-					
+				function hangTen(){
+					echo "Surf's  up! Grab your board!";
+				}
+				$surfIsUp = false;
+				if($surfIsUp){
+					echo hangTen();
+				} else {
+					echo 'Bummer beach!';
+				}
+
 				?>
 				
 			</div><!-- end sandbox -->
