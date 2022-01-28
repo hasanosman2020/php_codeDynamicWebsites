@@ -4,7 +4,7 @@
 	define("TITLE", "Do While Loop");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
+	$myName	= "Hasan Osman";
 	$lessonNum	= 22;
 	
 ?>
@@ -27,10 +27,15 @@
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
-				
+				<!--the dowhile loop will always execute the first time and then evaluate whether the condition is true afterwards--> 
 				<?php
-				 
-				    // your code here
+				 $i = 1;
+
+				 do{
+					 echo "Number: $i </ br> ";
+					 $i++;
+				 } while (
+					 $i <= 10);
 				 
 				?>
 				
