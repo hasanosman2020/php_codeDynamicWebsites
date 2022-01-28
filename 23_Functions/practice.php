@@ -4,7 +4,7 @@
 	define("TITLE", "Intro to Functions");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
+	$myName	= "Hasan Osman";
 	$lessonNum	= 23;
 	
 ?>
@@ -30,30 +30,50 @@
 				
 				<h3>Using <code>sort()</code></h3>
 				<?php
+					//FFirst, create an array
+					$dinner = array('Meat', 'Potatoes', 'Beans', 'Rice');
+
+					//Run the array using the sort() function, i.e. add the array as a parmeter to the sort function
+					sort($dinner);
 					
-					// your code here
-					
+					//Echo array on the screen using a forEach loop
+					foreach($dinner as $ingredient){
+						echo "$ingredient <br>";
+					}
 				?>
 				
 				<h3>Using <code>rsort()</code></h3>
 				<?php
-					
-					// your code here
+				///repeat the above steps with the rsort() array in order to view the list in reverse
+
+				$dinner = array('Meat', 'Potatoes', 'Bens', 'Rice');
+
+				rsort($dinner);
+
+				foreach($dinner as $ingredients){
+					echo "$ingredients <br>";
+				}
 					
 				?>
 				
 				<h3>Using <code>strtolower()</code></h3>
 				<?php
 					
-					// your code here
+					$song = 'TWINKLE TWINKLE LITTLE STAR';
+					
+					$song = strtolower($song);
+					echo $song;
 					
 				?>
 				
 				<h3>Using <code>sha1()</code></h3>
 				<?php
 					
-					// your code here
+					$password ="MyPassword";
+					echo "Before: $password <br>";
 					
+					$password = sha1($password);
+						echo "After: $password";
 				?>
 				
 			</div><!-- end sandbox -->
